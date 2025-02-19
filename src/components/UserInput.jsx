@@ -12,18 +12,6 @@ export default function UserInput({ userInput, handleOnChange}) {
             onChange={(event) => handleOnChange("initialInvestment", event.currentTarget.value)}
           />
         </label>
-        <label htmlFor="annual-investment">
-          Annual Investment
-          <input
-            type="number"
-            required
-            id="annual-investment"
-            defaultValue={userInput.annualInvestment}
-            onChange={(event) => handleOnChange("annualInvestment", event.currentTarget.value)}
-          />
-        </label>
-      </div>
-      <div className="input-group">
         <label htmlFor="expected-return">
           Expected Return
           <input
@@ -32,6 +20,18 @@ export default function UserInput({ userInput, handleOnChange}) {
             id="expected-return"
             defaultValue={userInput.expectedReturn} 
             onChange={(event) => handleOnChange("expectedReturn", event.currentTarget.value)}
+          />
+        </label>
+      </div>
+      <div className="input-group">
+        <label htmlFor="annual-investment">
+          Annual Investment
+          <input
+            type="number"
+            required
+            id="annual-investment"
+            defaultValue={userInput.annualInvestment}
+            onChange={(event) => handleOnChange("annualInvestment", event.currentTarget.value)}
           />
         </label>
         <label htmlFor="duration">
