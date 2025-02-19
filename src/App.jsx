@@ -20,7 +20,7 @@ function App() {
     });
   };
 
-  const inputIsValid = useState.duration >= 1;
+  const inputIsValid = userInput.duration >= 1;
   
   return (
     <>
